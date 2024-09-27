@@ -1,0 +1,133 @@
+/* Define color variables */
+:root {
+    --primary-color: #243e36; /* Primary color */
+    --secondary-color: #7ca982; /* Secondary color */
+    --tertiary-color: #f1f7ed; /* Tertiary color */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--tertiary-color); /* Tertiary color */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color); /* Primary color */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.logo img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+h1 {
+    font-family: 'Verdana', sans-serif; /* Web-safe font for headings */
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-family: Arial, sans-serif; /* Match the body font */
+    font-size: 1.1em; /* Same font size as the main content */
+    color: white; /* Ensure the text is visible on primary background */
+    margin-top: 10px; /* Add some space above */
+}
+
+/* Main section styles */
+main {
+    padding: 40px;
+    background-color: var(--tertiary-color); /* Tertiary color */
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--secondary-color); /* Secondary color */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--secondary-color); /* Secondary color */
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+p {
+    color: var(--primary-color); /* Primary color */
+    line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color); /* Primary color */
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+    color: var(--tertiary-color); /* Tertiary color */
+}
+
+/* Button Styles (for future use in navigation, etc.) */
+button {
+    background-color: var(--secondary-color); /* Secondary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color); /* Primary color */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
