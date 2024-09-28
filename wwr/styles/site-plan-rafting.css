@@ -5,12 +5,45 @@
     --tertiary-color: #f1f7ed; /* Tertiary color */
 }
 
-/* General styles */
+/* Color box styles */
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.primary-color {
+    background-color: var(--primary-color); /* Primary color */
+}
+
+.secondary-color {
+    background-color: var(--secondary-color); /* Secondary color */
+}
+
+.tertiary-color {
+    background-color: var(--tertiary-color); /* Tertiary color */
+}
+
+/* General body and font styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: var(--tertiary-color); /* Tertiary color */
     color: #333;
+}
+
+h2 {
+    font-family: Verdana, sans-serif; /* Font for headings */
+    font-size: 1.8em;
+    color: var(--primary-color); /* Primary color */
+}
+
+p {
+    color: var(--primary-color); /* Primary color */
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 /* Header styles */
@@ -21,7 +54,6 @@ header {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    overflow: hidden;
 }
 
 .logo img {
@@ -39,10 +71,45 @@ h1 {
 
 header p {
     font-family: Arial, sans-serif; /* Match the body font */
-    font-size: 1.1em; /* Same font size as the main content */
-    color: white; /* Ensure the text is visible on primary background */
-    margin-top: 10px; /* Add some space above */
+    font-size: 1.1em;
+    color: white;
+    margin-top: 10px;
 }
+
+/* Navbar styles */
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the nav items */
+    margin-top: 15px;
+    background-color: var(--secondary-color);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Horizontally center the nav items */
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--tertiary-color); /* Use tertiary color for the links */
+    background-color: var(--secondary-color); /* Secondary color as background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--primary-color); /* Change background color on hover */
+}
+
 
 /* Main section styles */
 main {
@@ -130,4 +197,15 @@ button:hover {
     h2 {
         font-size: 1.5em;
     }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
 }
+
