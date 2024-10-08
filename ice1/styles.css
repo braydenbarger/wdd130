@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ea8ff;
+    color: white;
+    text-align: center;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+h1:hover {
+    color: black; /* Change to black when hovered */
+}
+
+.quote {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.quote strong {
+    font-size: 20px;
+}
+
+.list {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto 40px;
+    padding-left: 40px;
+    color: black; /* Make the list items black */
+}
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.author {
+    font-size: 16px;
+    margin-top: 10px;
+    color: black; /* Make the author text black */
+}
