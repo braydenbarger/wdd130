@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #3ea8ff;
+    background-color: #5ca1d7;
     color: white;
     text-align: center;
 }
@@ -22,11 +22,11 @@ body {
 h1 {
     font-size: 48px;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition for the hover effect */
+    transition: color 0.3s ease;
 }
 
 h1:hover {
-    color: black; /* Change to black when hovered */
+    color: black;
 }
 
 .quote {
@@ -43,7 +43,7 @@ h1:hover {
     text-align: left;
     margin: 0 auto 40px;
     padding-left: 40px;
-    color: black; /* Make the list items black */
+    color: black;
 }
 
 .image-container {
@@ -65,5 +65,5 @@ h1:hover {
 .author {
     font-size: 16px;
     margin-top: 10px;
-    color: black; /* Make the author text black */
+    color: black;
 }
