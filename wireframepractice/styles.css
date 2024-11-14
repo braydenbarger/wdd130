@@ -30,6 +30,7 @@ body {
     align-items: center;
     gap: 10px;
     padding-left: 20px;
+    text-decoration: none;
 }
 
 .logo-title img.logo-img {
@@ -83,6 +84,99 @@ body {
     max-width: 600px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
+
+/* Title Section */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #5c6bc0;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards Section */
+.river-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+    justify-content: center;
+}
+
+.river-card {
+    display: flex;
+    align-items: center;
+    width: 1200px; /* Fixed width for consistent card size */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.river-card-r {
+    display: flex;
+    align-items: center;
+    width: 1200px; /* Fixed width for consistent card size */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.river-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.river-card img {
+    width: 1600px; /* Fixed width for image */
+    height: 160px; /* Fixed height for consistent appearance */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.river-card-r:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.river-card-r img {
+    width: 1600px; /* Fixed width for image */
+    height: 160px; /* Fixed height for consistent appearance */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.river-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.river-card-content h3 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #333;
+}
+
+.river-card-content p {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+
 
 /* Cards Section */
 .cards {
