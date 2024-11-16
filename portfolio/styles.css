@@ -178,3 +178,8 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+main img {
+  height: 100%;
+  width: 100%;
+}
