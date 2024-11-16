@@ -176,6 +176,13 @@ body {
     margin-top: 5px;
 }
 
+.river-card-content {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
 
 
 /* Cards Section */
