@@ -152,3 +152,48 @@ footer i:hover {
         max-width: 100%;
     }
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 47, 54, 0.8);
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
