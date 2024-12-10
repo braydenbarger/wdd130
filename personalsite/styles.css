@@ -137,7 +137,6 @@ footer i:hover {
     transform: scale(1.2);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav .list {
         flex-direction: column;
